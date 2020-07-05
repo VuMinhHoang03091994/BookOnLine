@@ -1,0 +1,108 @@
+.App {
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* chữ tiêu đề */
+.card-title {
+  margin-bottom: .75rem;
+  text-align: center;
+}
+/* heetschu tieu đề */
+/* css phần chi tiết */
+.chitiet1{
+  font-family: 'Times New Roman', Times, serif, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif;
+  display: inline;
+  font-size: 20px;
+  line-height: 25px;
+}
+.divtongchitiet{
+  margin-top: 50px;
+}
+
+/*hết css phần chi tiết */
+/* thêm */
+.col-sm-4.divtongthemsach {
+  border: 4px solid #505088;
+  background: #e9f3f1;
+  margin-top: 5px;
+}
+/* hết thêm */
+/* chi tiết ảnh */
+.divanh img{
+  width: 100%;
+  height: auto;
+}
+.khoianh img {
+  height: 240px;
+}
+/* hết chi tiết ảnh */
+/* hiệu ứng div khối ảnh  */
+.khoianh, .divanh {
+  animation:hienra 1s forwards;
+}
+.divthongtin{
+  animation:hienraright 1s forwards;
+}
+.divlogin{
+  animation:hienraright 1s forwards;
+}
+.divthongtin{
+  animation:hienraright 1s forwards;
+}
+.divtongthemsach{
+  animation:hienraright 1s forwards;
+}
+/*hết hiệu ứng div khối ảnh  */
+@keyframes hienra{
+	from {opacity: 0; transform: translateX(-200px);}
+	to {opacity: 1; transform: translateX(0px);}
+	/* sau đó gọi như sau
+	animation:hienra 1s forwards;
+	animation-delay: 0.4s;
+	*/
+}
+@keyframes hienraright{
+	from {opacity: 0; transform: translateX(200px);}
+	to {opacity: 1; transform: translateX(0px);}
+	/* sau đó gọi như sau
+	animation:hienra 1s forwards;
+	animation-delay: 0.4s;
+	*/
+}
+@keyframes dixuong{
+	from {opacity: 0; transform: translateY(-200px);}
+	to {opacity: 1; transform: translateY(0px);}
+}

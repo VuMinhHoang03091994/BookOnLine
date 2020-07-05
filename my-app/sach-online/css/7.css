@@ -1,0 +1,217 @@
+
+/* css nút tìm kiếm  */
+/* Style the search field */
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+/* hết phần css nút tìm kiếm  */
+/* css các nút logo, đăng xuất, đăng nhập */
+.navbar-custom .navbar-brand {
+    font-weight: 900;
+    border: 5px solid gray;
+    padding: 6px 25px;
+    background: #5d5e5f;
+    transition: 0.4s;
+
+    animation:hienra 1.25s forwards;
+	animation-delay: 0.4s;
+}
+form.example {
+    animation:hienra 1s forwards;
+	animation-delay: 0.4s;
+}
+.navbar-custom .navbar-brand:hover {
+    background: black;
+    color: white;
+}
+li.nav-item {
+    animation:hienraright 0.7s forwards;
+	animation-delay: 0.4s;
+}
+nav.navbar.navbar-expand-lg.navbar-dark.navbar-custom.fixed-top {
+
+    animation:dixuong 0.5s forwards;
+	animation-delay: 0.4s;
+}
+/*hết css các nút đăng xuất, đăng nhập */
+/* css cho nút chi sửa xóa */
+.nutchitiet .btn-outline-primary {
+    color: #0275d8;
+    background-image: none;
+    background-color: transparent;
+    border-color: #0275d8;
+    font-size: 11px;
+}
+/*hết css cho nút chi tiết, đọc */
+/* css phần loại sách */
+.danhmuc{
+    padding-top: 4px;
+}
+.noidung{
+    /* giống float: left: ; đi cùng vs  flex-wrap: wrap;*/
+    display: flex;
+    flex-wrap: wrap;
+    
+    position: relative;
+}
+.noidung .khoianh{
+    width: 25%;
+    /* giúp padding không thay đổi khung bên ngoài */
+    box-sizing: border-box;
+    padding: 5px;
+    /* khi di chuột vào sẽ có hình bàn tay */
+    cursor: pointer;
+}
+.noidung .nhandoi{
+    width: 50%;
+}
+.khoianh img{
+    width: 100%;
+    border: 15px solid beige;
+}
+
+ficaption {
+    text-align: center;
+    padding: 2px;
+    background: lightblue;
+}
+/* màu cho nút */
+.duocchon{
+    background: brown;
+}
+/* end màu */
+@media (max-width: 576px){
+    .noidung .khoianh{width: 50%;}
+}
+@media (min-width: 577px) and (max-width: 768px){
+    .noidung .khoianh{width: 30%;}
+}
+/*hết css phần loại sách */
+/* phần footer dưới cùng */
+.bottom_footer{
+    
+}
+.mangxh a:hover{
+    color: white;
+}
+.mangxh a{
+    color: #a1b1bc;
+    padding: 0px 11px;
+    transition: 0.4s;
+}
+.bottom_footer{
+    background: black;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    color: #a1b1bc;
+}
+
+/* ------------------------------phần login------------------------------------------ */
+.anhlogin img {
+    vertical-align: middle;
+    border-style: none;
+    width: 300px;
+    height: 327px;
+    padding: 36px;
+    border-radius: 50px;
+    float: left;
+}
+
+.form-control { 
+    margin-bottom: 10px;
+    }
+    .login-screen-bg {  
+    background-color: #EFEFEF;
+    }
+/* ----------------------------------hết login-------------------------------------- */
+/* ----------------------------------thêm sách-------------------------------------- */
+*{margin: 0; padding: 0;} 
+.theloaisach{
+    width: 100%;
+}
+.col-sm-4.divtongthemsach {
+    border: 4px solid #505088;
+    background: #e9f3f1;
+    margin-top: 5px;
+}
+.divtongthemsach h4 {
+    text-align: center;
+    color: #c30000;
+}
+.divtongthemsach button.btn.btn-lg.btn-primary.text-sm-center {
+    margin-left: 24%;
+    width: 160px;
+    height: 40px;
+    margin-bottom: 10px;
+    line-height: 10px;
+}
+.divtongthemsach label::-webkit-input-placeholder{
+	color: #2c3e50;
+	font-weight: bold;
+	font-size: 14px;
+}
+/* ----------------------------------hết thêm sách-------------------------------------- */
+
+/* phần hiệu ứng khi load trang */
+@keyframes hienra{
+	from {opacity: 0; transform: translateX(-200px);}
+	to {opacity: 1; transform: translateX(0px);}
+	/* sau đó gọi như sau
+	animation:hienra 1s forwards;
+	animation-delay: 0.4s;
+	*/
+}@keyframes hienraright{
+	from {opacity: 0; transform: translateX(200px);}
+	to {opacity: 1; transform: translateX(0px);}
+	/* sau đó gọi như sau
+	animation:hienra 1s forwards;
+	animation-delay: 0.4s;
+	*/
+}
+@keyframes dixuong{
+	from {opacity: 0; transform: translateY(-200px);}
+	to {opacity: 1; transform: translateY(0px);}
+}
+/*end phần hiệu ứng khi load trang */
+
+/* css phần chi tiết */
+.chitiet1{
+    font-family: 'Times New Roman', Times, serif, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif;
+    display: inline;
+    font-size: 20px;
+    line-height: 25px;
+}
+.divtongchitiet{
+    margin-top: 50px;
+}
+/*hết css phần chi tiết */
